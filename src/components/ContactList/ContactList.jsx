@@ -4,7 +4,7 @@ const ContactList = ({ contactsList, deleteContact }) => {
   return (
     <div>
       <ul>
-        {contactsList().map(({ id, name, number }) => (
+        {contactsList.map(({ id, name, number }) => (
             <li key={id}>
                 <p>{name}: {number}</p>
                 

@@ -83,7 +83,7 @@ function App() {
           <h2>Contacts</h2>
           <Filter filterContact={changeFilter} />
           <ContactList
-            contactsList={filterContact}
+            contactsList={filterContact()}
             deleteContact={deleteContact}
           />
         </div>
