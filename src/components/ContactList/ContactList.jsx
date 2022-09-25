@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const ContactList = ({ contactsList, deleteContact }) => {
-  // console.log(addContacts);
+  // console.log(deleteContact);
   return (
     <div>
       <ul>
