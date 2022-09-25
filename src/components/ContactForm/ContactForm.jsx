@@ -7,7 +7,6 @@ export default function ContactForm({ handleSubmit }) {
 
   const handleChange = event => {
     const { name, value } = event.target;
-    console.log(event.target);
     switch (name) {
       case 'name':
         setName(value);
