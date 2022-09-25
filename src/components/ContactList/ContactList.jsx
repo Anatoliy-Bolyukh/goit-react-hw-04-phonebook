@@ -5,7 +5,7 @@ const ContactList = ({ contactsList, deleteContact }) => {
   return (
     <div>
       <ul>
-        {contactsList.map(({ id, name, number }) => {
+        {contactsList().map(({ id, name, number }) => {
           return (
             <li key={id}>
                 <p>{name}: {number}</p>
@@ -20,6 +20,7 @@ const ContactList = ({ contactsList, deleteContact }) => {
 };
 
 ContactList.propTypes = {
+  contactsList: PropTypes.func,
   deleteContact: PropTypes.func,
 };
 
